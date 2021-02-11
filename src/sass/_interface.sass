@@ -1,0 +1,57 @@
+.section
+ &-title
+  font-size: 27px
+  font-weight: 700
+  text-transform: uppercase
+  text-align: center
+  margin-bottom: 29px
+  &::after
+   content: ''
+   margin-top: 12px
+   display: block
+   height: 6px
+   background: url(../img/products/line.png) center no-repeat
+      
+.button
+ font-size: 14px
+ background-color: $active-color
+ border: 1px solid transparent
+ color: $text-color-light
+ padding: 13px 22px
+ border-radius: 5px
+ &:hover
+  background-color: lighten($active-color, 5)
+  cursor: pointer
+ img
+  vertical-align: middle
+  //max-width: 100%
+ &_big
+  padding-top: 18px
+  padding-bottom: 18px
+  vertical-align: middle
+  //width: 30%
+.button-o
+  background-color: transparent
+  color: $text-color-dark
+  border: 1px solid rgba(#251d1d, 0.5)
+  &:hover
+   background-color: lighten($active-color, 5)
+   color: $text-color-light
+   border: 1px solid transparent
+   cursor: pointer
+//img
+ //vertical-align: middle
+.dark-bg
+ position: relative
+ z-index: 2
+ &::before
+  content: ''
+  display: block
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.6)
+  z-index: -1
+ 

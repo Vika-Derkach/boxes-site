@@ -1,0 +1,119 @@
+.production
+ padding-top: 87px
+ .container
+  padding-bottom: 95px
+.production-main
+ width: 100%
+.production-slider
+ display: inline-block
+ margin: left
+ width: 60%
+ position: relative
+ //display: flex
+.production-text
+ width: 39%
+ display: inline-block
+ vertical-align: top
+ max-width: 379px
+ padding-left: 25px
+ //margin-left: 25px
+ &__title
+  position: relative
+  z-index: 1
+  color: $text-color-light
+  background-color: $active-color
+  font-size: 28px
+  font-weight: 300
+  margin-top: 19px
+  margin-bottom: 28px
+  margin-left: -10px
+  padding-left: 10%
+  width: 115%
+  transform: translateX(-10%)
+  padding-top: 20px
+  padding-bottom: 20px
+  //width: 100%
+  //max-width: 379px
+ &__descr
+  font-size: 16px
+  font-weight: 300
+  line-height: 24px
+  //padding-left: 25px
+  text-align: justify
+  //margin-left: 25px
+  //width: 100%
+  //max-width: 379px
+  
+
+.production-slider__big
+ z-index: 3
+ .production-slider__item
+  height: 377px
+  img
+   height: 377px
+   width: 100%
+.production-slider__small
+ //width: 80%
+ //align-items: center
+ width: calc( 100% - 36px )
+ margin: auto
+ .production-slider__item
+  //display: inline-block
+  height: 78px
+  z-index: 1
+  padding-right: 5px
+  padding-left: 5px
+  img
+   height: 78px
+   filter: brightness(50%)
+   width: 133px
+   object-fit: cover
+
+.production-slider__small
+ .slick-current
+  img
+   filter: none
+    
+   
+.production-wrapper
+ //width: 100%
+ position: relative
+ .production-arrow__pre
+  position: absolute
+  left: 0
+  //display: inline-block
+  background: transparent
+  border: 1px solid #ff9d00
+  height: 78px
+  padding: 28px 5px
+  top: 50%
+  transform: translateY(-50%)
+  z-index: 3
+  &:hover
+   background: #ff9d00
+   border: none
+   & path
+    fill: #ffffff
+ .production-arrow__next
+  position: absolute
+  background: transparent
+  align-items: end
+  right: 0
+  top: 50%
+  transform: translateY(-50%)
+  //transform: translateX(2100%)
+  z-index: 3
+  border: 1px solid #ff9d00
+  height: 78px
+  padding: 28px 5px
+  &:hover
+   border: none
+   background: #ff9d00
+   & path
+       fill: #ffffff
+   //background-image: url(../img/svg/arrow-right_white.svg)
+   
+   
+ 
+.production-slider__small .slick-slide div
+    height: 78px

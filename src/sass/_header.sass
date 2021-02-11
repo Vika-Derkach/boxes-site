@@ -1,0 +1,37 @@
+.header
+ margin-top: 57.8px
+ padding: 15px 0px
+ &-logo
+  background: url(../img/header-logo.png) center no-repeat
+  background-size: 100%
+  width: 191px
+  height: 61px
+ &-contacts
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  &__phone
+   &s
+    display: flex
+   font-size: 22px
+   margin-right: 13px
+   &:first-child
+    border-right: 1px solid #cfcfd0
+    padding-right: 13px
+
+@keyframes move
+ 0%
+  opacity: 0
+  margin-bottom: -100px
+ 40%  
+  opacity: 1 
+  margin-bottom: -100px
+  transform: rotateY(90deg)
+ 100%  
+  opacity: 1 
+  margin-bottom: 0px
+  transform: rotateY(0)
+  
+.animate
+ animation-name: move
+ animation-duration: 1s
